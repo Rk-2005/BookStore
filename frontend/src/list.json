@@ -1,0 +1,66 @@
+[
+    {
+        "id": 1,
+        "name": "The Enchanted Forest",
+        "title": "A magical journey through an ancient woodland filled with mysteries.",
+        "price": "0",
+        "category": "free",
+        "image": "https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?w=740"
+    },
+    {
+        "id": 2,
+        "name": "The Lost Galaxy",
+        "title": "An interstellar adventure beyond the known universe.",
+        "price": "0",
+        "category": "free",
+        "image": "https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?w=740"
+    },
+    {
+        "id": 3,
+        "name": "Legends of Atlantis",
+        "title": "Dive into the mythical city hidden beneath the ocean waves.",
+        "price": "0",
+        "category": "free",
+        "image": "https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?w=740"
+    },
+    {
+        "id": 4,
+        "name": "Mysteries of Time",
+        "title": "A scientist's journey through time to uncover ancient secrets.",
+        "price": "0",
+        "category": "free",
+        "image": "https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?w=740"
+    },
+    {
+        "id": 5,
+        "name": "Echoes of the Past",
+        "title": "A thrilling historical fiction unraveling a long-lost legend.",
+        "price": "0",
+        "category": "free",
+        "image": "https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?w=740"
+    },
+    {
+        "id": 6,
+        "name": "The Shadow Chronicles",
+        "title": "A battle between light and darkness in an epic fantasy world.",
+        "price": "0",
+        "category": "free",
+        "image": "https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?w=740"
+    },
+    {
+        "id": 7,
+        "name": "Secrets of the Universe",
+        "title": "Exploring the wonders and mysteries of the cosmos.",
+        "price": "199",
+        "category": "premium",
+        "image": "https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?w=740"
+    },
+    {
+        "id": 8,
+        "name": "The Art of War",
+        "title": "Ancient strategies and wisdom that shaped history.",
+        "price": "299",
+        "category": "premium",
+        "image": "https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?w=740"
+    }
+]
