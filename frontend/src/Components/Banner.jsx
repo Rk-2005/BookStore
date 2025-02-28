@@ -39,7 +39,7 @@ function Banner() {
               </label>
             </div>
           </div>
-          <button className="btn btn-secondary mt-6">Secondary</button>
+          <button className="btn btn-secondary mt-6">Get Started</button>
         </div>
         <div className="w-full md:w-1/2 flex justify-center md:order-1">
           <img src="Banner.png" className="h-90 ml-16" alt="Banner" />
