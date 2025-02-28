@@ -1,23 +1,44 @@
 import React from 'react'
-
+import toast, { Toaster } from 'react-hot-toast';
 import { useForm } from "react-hook-form"
 import Login from './login';
+import axios from 'axios';
+import { Navigate , useNavigate} from 'react-router-dom';
 function Signup() {
+  const navigate = useNavigate();
     const {
         register,
         handleSubmit,
         formState: { errors },
       } = useForm()
     
-      const onSubmit = (data) => {
-        console.log(data)
+      const onSubmit = async (data) => {
+        const userinfo={
+          name:data.name,
+          email:data.email,
+          password:data.password
+        }
+        console.log(userinfo)
+        await axios.post("http://localhost:3000/userRouter/signup",userinfo).then((res)=>{
+          console.log(res.data.user)
+          localStorage.setItem("Users", JSON.stringify(res.data.user)); 
+          toast.success("Signup success");
+          navigate("/")
+          
+        }).catch((err)=>{
+          if(err.response){
+            console.log(err)
+            alert("Error" + err.response.data.message)
+          }
+          console.log(err);
+        })
       }
   return (
     <div>
     
-        <div className="flex  h-screen  items-center  justify-center border  dark:bg-white dark:text-black bg-pink-50" >
+        <div className="flex  h-screen  items-center  justify-center border  dark:bg-slate-900 dark:text-white bg-white-50 " >
         <div className="border w-90 rounded-2xl p-10 dark:">
-          <h3 className="font-bold text-xl text-pink-500">Signup</h3>
+          <h3 className="font-bold text-xl text-pink-500 ">Signup</h3>
           <div className="pt-7">
             <div className="text-pink-500">Name:</div>
             <div className="flex justify-center">
@@ -25,7 +46,7 @@ function Signup() {
                 type="name"
                 {...register("name", { required: "Name is required" })}
                 placeholder="Enter your name"
-                className="rounded-xl w-full text-center mt-3 p-0.5"
+                className="rounded-xl w-full text-center mt-3 p-0.5 dark:placeholder-white"
               />
             </div>
             {errors.name && (
@@ -38,8 +59,9 @@ function Signup() {
             <div className="flex justify-center">
               <input
                 type="email"
+                className="rounded-xl w-full text-center mt-3 p-0.5 dark:placeholder-white"
                 placeholder="Enter your email"
-                className="rounded-xl w-full text-center mt-3 p-0.5"
+                
                 {...register("email", { required: "Email is required" })}
               />
             </div>
@@ -55,7 +77,7 @@ function Signup() {
                 type="password" // Use type="password" for password fields
                 {...register("password", { required: "Password is required" })}
                 placeholder="Enter your password"
-                className="rounded-xl w-full text-center mt-3 p-0.5 placeholder:to-black"
+                className="rounded-xl w-full text-center mt-3 p-0.5 placeholder:to-black dark:placeholder-white"
               />
             </div>
             {errors.password && (
@@ -63,7 +85,7 @@ function Signup() {
               )}
           </div>
           <div className="flex justify-between mt-8">
-            <button onClick={handleSubmit(onSubmit)} className="btn btn-secondary h-9">Login</button>
+            <button onClick={handleSubmit(onSubmit)} className="btn btn-secondary h-9">Signup</button>
             <div className="text-black mt-1 dark:text-slate-400">
               Have Account?
               <a onClick={()=>document.getElementById('my_modal_2').showModal()}>
