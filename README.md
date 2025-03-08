@@ -77,7 +77,7 @@ npm start
 ![image](https://github.com/user-attachments/assets/2c47e8d4-3233-4fad-a884-cd803018de91)
 
 ### 📌 Signup Page
-![Signup](![image](https://github.com/user-attachments/assets/e8f6c9f9-d37f-4c65-b7c9-fc7c6c04f760))
+![image](https://github.com/user-attachments/assets/e8f6c9f9-d37f-4c65-b7c9-fc7c6c04f760))
 
 
 
