@@ -71,7 +71,7 @@ npm start
 
 ## 📷 Images
 ### 📌 Home Page
-![Home Page](![image](https://github.com/user-attachments/assets/820a972a-9c42-4c83-bad4-ccfd9aca8e93))
+(![image](https://github.com/user-attachments/assets/820a972a-9c42-4c83-bad4-ccfd9aca8e93))
 
 ### 📌 Login Page
 ![Free Books](![image](https://github.com/user-attachments/assets/2c47e8d4-3233-4fad-a884-cd803018de91))
