@@ -3,9 +3,7 @@ import dotenv from 'dotenv';
 
 dotenv.config(); // Load environment variables
 
-const url ="mongodb+srv://ronakkriplani9:Ronak123456789@cluster0.ctnht.mongodb.net/BookStore"; // Use environment variable instead of hardcoding
-
-
+const url =process.env.url; // Use environment variable instead of hardcoding
 
 mongoose.connect(url, {
 }).then(() => {
