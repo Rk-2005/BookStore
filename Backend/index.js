@@ -7,7 +7,7 @@ import cors from "cors"
 import userRouter from "./Route/Signup.js"
 dotenv.config();
 
-const port=process.env.port || 4001;
+const port=process.env.port || 3000;
 
 app.use("/books",bookRoute);
 app.use("/userRouter",userRouter)
