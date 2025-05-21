@@ -19,7 +19,7 @@ function Signup() {
           password:data.password
         }
         console.log(userinfo)
-        await axios.post("http://localhost:3000/userRouter/signup",userinfo).then((res)=>{
+        await axios.post("https://bookstore-7jom.onrender.com/userRouter/signup",userinfo).then((res)=>{
           console.log(res.data.user)
           localStorage.setItem("Users", JSON.stringify(res.data.user)); 
           toast.success("Signup success");

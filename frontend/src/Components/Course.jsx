@@ -10,7 +10,7 @@ function Course() {
     useEffect(() => {
       const getBook = async () => {
         try {
-          const res = await axios.get("http://localhost:3000/books");
+          const res = await axios.get("https://bookstore-7jom.onrender.com/books");
           console.log(res.data.books); 
           setbook(res.data.books)
         } catch (error) {
